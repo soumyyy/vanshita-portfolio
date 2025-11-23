@@ -58,7 +58,7 @@ export function Portfolio() {
                 <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/30 bg-muted group-hover:scale-105 transition-transform duration-500">
                   {/* Placeholder image with query */}
                   <img
-                    src={`/marketing-project.png?height=600&width=800&query=marketing project ${project.category.toLowerCase().replace(/\s+/g, "-")}`}
+                    src="/marketing-project.png"
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />
