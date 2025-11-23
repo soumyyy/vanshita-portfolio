@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react"
+import Image from "next/image"
 
 export function About() {
   const highlights = [
@@ -16,7 +17,13 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative order-2 md:order-1">
             <div className="aspect-4/5 rounded-2xl overflow-hidden bg-muted relative shadow-xl">
-              <img src="/image.jpeg" alt="Vanshita Kalra" className="object-cover w-full h-full" />
+              <Image
+                src="/image.jpeg"
+                alt="Vanshita Kalra"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
             {/* Decorative element */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-full -z-10 blur-2xl"></div>

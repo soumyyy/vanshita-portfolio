@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export function Portfolio() {
   const projects = [
@@ -56,11 +57,11 @@ export function Portfolio() {
             >
               <div className="aspect-video bg-muted relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/30 bg-muted group-hover:scale-105 transition-transform duration-500">
-                  {/* Placeholder image with query */}
-                  <img
+                  <Image
                     src="/marketing-project.png"
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wider shadow-sm">
