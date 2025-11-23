@@ -68,9 +68,9 @@ export function Portfolio() {
                 </div>
               </div>
 
-              <div className="p-8 flex flex-col flex-grow">
+              <div className="p-8 flex flex-col grow">
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
-                <p className="text-muted-foreground mb-6 line-clamp-2 flex-grow">{project.description}</p>
+                <p className="text-muted-foreground mb-6 line-clamp-2 grow">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map((tag, i) => (
                     <span
