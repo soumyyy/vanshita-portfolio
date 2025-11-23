@@ -23,6 +23,7 @@ export function About() {
                 fill
                 className="object-cover"
                 priority
+                unoptimized
               />
             </div>
             {/* Decorative element */}

@@ -62,6 +62,7 @@ export function Portfolio() {
                     alt={project.title}
                     fill
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
                 <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wider shadow-sm">
