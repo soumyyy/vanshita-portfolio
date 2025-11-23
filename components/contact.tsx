@@ -19,17 +19,17 @@ export function Contact() {
 
             <div className="space-y-6">
               <a
-                href="mailto:hello@vanshitakalra.com"
+                href="mailto:vanshitahi@gmail.com"
                 className="flex items-center gap-4 text-xl font-medium hover:text-primary transition-colors group p-2 -ml-2 rounded-lg hover:bg-secondary/50"
               >
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
                   <Mail className="w-5 h-5" />
                 </div>
-                hello@vanshitakalra.com
+                vanshitahi@gmail.com
               </a>
 
               <a
-                href="https://linkedin.com/in/vanshitakalra"
+                href="https://www.linkedin.com/in/vanshita-kalra-6a5077262/" 
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-4 text-xl font-medium hover:text-primary transition-colors group p-2 -ml-2 rounded-lg hover:bg-secondary/50"
@@ -61,7 +61,7 @@ export function Contact() {
                   </label>
                   <Input
                     id="name"
-                    placeholder="John Doe"
+                    placeholder="your name"
                     className="bg-background rounded-xl border-transparent focus:border-primary h-12 shadow-sm"
                   />
                 </div>

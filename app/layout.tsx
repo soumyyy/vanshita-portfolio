@@ -20,23 +20,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Vanshita Kalra | Marketing Analyst & Digital Strategist",
   description: "Portfolio of Vanshita Kalra - Turning insights into strategy and strategy into growth.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/icon.jpeg",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/icon.jpeg",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/icon.jpeg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/icon.jpeg",
   },
 }
 

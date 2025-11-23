@@ -23,7 +23,7 @@ export function Hero() {
             <span className="italic text-primary">growth.</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            I’m Vanshita Kalra—a creative storyteller blending data-driven research with compelling content to build
+            I’m Vanshita Kalra, a creative storyteller blending data-driven research with compelling content to build
             brands that connect.
           </p>
 

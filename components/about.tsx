@@ -15,7 +15,7 @@ export function About() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative order-2 md:order-1">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-muted relative shadow-xl">
+            <div className="aspect-4/5 rounded-2xl overflow-hidden bg-muted relative shadow-xl">
               <img src="/professional-woman-portrait-office.jpeg" alt="Vanshita Kalra" className="object-cover w-full h-full" />
             </div>
             {/* Decorative element */}
@@ -27,7 +27,7 @@ export function About() {
             <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">About Me</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Hi, I'm Vanshita. I work at the intersection of{" "}
+                Hi, I'm Vanshita. I work between{" "}
                 <strong className="text-foreground font-semibold">research, content, and strategy</strong>. With a
                 background in English Literature and Economics, I bring a unique duality to marketing: the ability to
                 craft compelling narratives while grounding them in hard data.
