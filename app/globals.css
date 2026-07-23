@@ -3,70 +3,68 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Updated color palette to Warm, Premium Theme */
+/* Editorial cream theme: warm cream background, maroon/burgundy/brick reserved for text, elements & 3D */
 :root {
-  /* Background: Soft Cream/Beige */
-  --background: #fdfcf8;
-  /* Foreground: Deep Charcoal */
-  --foreground: #1c1917;
+  /* Background: warm cream */
+  --background: #f6f0e4;
+  --foreground: #211a15;
 
-  /* Card: Slightly lighter or pure white to stand out on cream */
-  --card: #ffffff;
-  --card-foreground: #1c1917;
+  /* Card/surface: slightly deeper cream */
+  --card: #efe6d4;
+  --card-foreground: #211a15;
 
-  --popover: #ffffff;
-  --popover-foreground: #1c1917;
+  --popover: #efe6d4;
+  --popover-foreground: #211a15;
 
-  /* Primary: Deep Terracotta / Burnt Orange */
-  --primary: #c2410c;
-  --primary-foreground: #ffffff;
+  /* Primary: deep maroon / burgundy */
+  --primary: #6e1c26;
+  --primary-foreground: #f6f0e4;
 
-  /* Secondary: Warm Beige/Taupe */
-  --secondary: #f5f5f4;
-  --secondary-foreground: #1c1917;
+  /* Secondary: warm taupe surface */
+  --secondary: #e8dcc4;
+  --secondary-foreground: #211a15;
 
-  /* Muted: Warm Grey */
-  --muted: #e7e5e4;
-  --muted-foreground: #57534e;
+  /* Muted: warm grey-brown */
+  --muted: #e8dcc4;
+  --muted-foreground: #6b5c4f;
 
-  /* Accent: Softer Terracotta */
-  --accent: #ffedd5;
-  --accent-foreground: #9a3412;
+  /* Accent: brick red, for hover/highlight states */
+  --accent: #8a2e2e;
+  --accent-foreground: #f6f0e4;
 
-  --destructive: #ef4444;
+  --destructive: #8a2e2e;
   --destructive-foreground: #ffffff;
 
-  --border: #e7e5e4;
-  --input: #e7e5e4;
-  --ring: #c2410c;
+  --border: #ddceb3;
+  --input: #ddceb3;
+  --ring: #8a2e2e;
 
-  --chart-1: #c2410c;
-  --chart-2: #ea580c;
-  --chart-3: #57534e;
-  --chart-4: #a8a29e;
-  --chart-5: #ffedd5;
+  --chart-1: #6e1c26;
+  --chart-2: #8a2e2e;
+  --chart-3: #6b5c4f;
+  --chart-4: #a4907b;
+  --chart-5: #3a2c24;
 
-  --radius: 0.5rem;
+  --radius: 0.375rem;
 
-  /* Sidebar variables (keeping for compatibility, mapped to theme) */
-  --sidebar: #fdfcf8;
-  --sidebar-foreground: #1c1917;
-  --sidebar-primary: #c2410c;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f5f5f4;
-  --sidebar-accent-foreground: #1c1917;
-  --sidebar-border: #e7e5e4;
-  --sidebar-ring: #c2410c;
+  --sidebar: #f6f0e4;
+  --sidebar-foreground: #211a15;
+  --sidebar-primary: #6e1c26;
+  --sidebar-primary-foreground: #f6f0e4;
+  --sidebar-accent: #e8dcc4;
+  --sidebar-accent-foreground: #211a15;
+  --sidebar-border: #ddceb3;
+  --sidebar-ring: #8a2e2e;
 
   /* Animations */
-  --animate-fade-up: fade-up 0.5s ease-out forwards;
-  --animate-fade-in: fade-in 0.5s ease-out forwards;
+  --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fade-in 1s ease-out forwards;
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(28px);
   }
   to {
     opacity: 1;
@@ -83,55 +81,10 @@
   }
 }
 
-.dark {
-  /* Dark Mode: Deep Warm Grey/Brown base */
-  --background: #1c1917;
-  --foreground: #fdfcf8;
-
-  --card: #292524;
-  --card-foreground: #fdfcf8;
-
-  --popover: #292524;
-  --popover-foreground: #fdfcf8;
-
-  --primary: #ea580c;
-  --primary-foreground: #ffffff;
-
-  --secondary: #44403c;
-  --secondary-foreground: #fdfcf8;
-
-  --muted: #44403c;
-  --muted-foreground: #a8a29e;
-
-  --accent: #431407;
-  --accent-foreground: #ea580c;
-
-  --destructive: #7f1d1d;
-  --destructive-foreground: #ffffff;
-
-  --border: #44403c;
-  --input: #44403c;
-  --ring: #ea580c;
-
-  --chart-1: #ea580c;
-  --chart-2: #c2410c;
-  --chart-3: #a8a29e;
-  --chart-4: #57534e;
-  --chart-5: #431407;
-
-  --sidebar: #1c1917;
-  --sidebar-foreground: #fdfcf8;
-  --sidebar-primary: #ea580c;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #44403c;
-  --sidebar-accent-foreground: #fdfcf8;
-  --sidebar-border: #44403c;
-  --sidebar-ring: #ea580c;
-}
-
 @theme inline {
   --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif); /* Added serif font variable */
+  --font-serif: var(--font-serif);
+  --font-cursive: var(--font-cursive);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -169,21 +122,28 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Added animation variables */
-  --animate-fade-up: fade-up 0.5s ease-out forwards;
-  --animate-fade-in: fade-in 0.5s ease-out forwards;
+  --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fade-in 1s ease-out forwards;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    background: var(--background);
+    scrollbar-color: var(--accent) var(--background);
+  }
   body {
     @apply bg-background text-foreground;
   }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
 }
 
-/* Added custom utilities */
+/* Custom utilities */
 .text-balance {
   text-wrap: balance;
 }
@@ -192,4 +152,23 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.font-cursive {
+  font-family: var(--font-cursive);
+}
+
+/* Fine film-grain texture overlay for atmosphere */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.section-heading-eyebrow {
+  letter-spacing: 0.28em;
 }

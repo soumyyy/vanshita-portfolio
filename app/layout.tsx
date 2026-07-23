@@ -1,11 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Playfair_Display, Inter } from "next/font/google"
+import { Playfair_Display, Inter, Alex_Brush } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
@@ -16,10 +14,17 @@ const inter = Inter({
   variable: "--font-sans",
   display: "swap",
 })
+const cursive = Alex_Brush({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-cursive",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
-  title: "Vanshita Kalra | Marketing Analyst & Digital Strategist",
-  description: "Portfolio of Vanshita Kalra - Turning insights into strategy and strategy into growth.",
+  title: "Vanshita Kalra",
+  description:
+    "Vanshita Kalra, curious by nature and an Executive Search Consultant at XQtiv Consulting leading VP-level leadership search across technology and BFSI.",
   icons: {
     icon: [
       {
@@ -45,8 +50,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`dark ${playfair.variable} ${inter.variable} ${cursive.variable}`}>
       <body className="font-sans bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary">
+        <div className="grain-overlay" aria-hidden="true" />
         {children}
         <Analytics />
       </body>

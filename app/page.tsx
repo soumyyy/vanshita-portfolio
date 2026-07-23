@@ -2,24 +2,25 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
 import { Experience } from "@/components/experience"
-import { Leadership } from "@/components/leadership"
-import { Skills } from "@/components/skills"
-import { Portfolio } from "@/components/portfolio"
+import { Work } from "@/components/work"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { SmoothScroll } from "@/components/smooth-scroll"
+import { BackgroundMount } from "@/components/background-mount"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20">
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Leadership />
-      <Skills />
-      {/* <Portfolio /> */}
-      <Contact />
-      <Footer />
-    </main>
+    <SmoothScroll>
+      <BackgroundMount />
+      <main className="relative z-10 min-h-screen text-foreground font-sans selection:bg-primary/20">
+        <Navbar />
+        <Hero />
+        <About />
+        <Experience />
+        <Work />
+        <Contact />
+        <Footer />
+      </main>
+    </SmoothScroll>
   )
 }
